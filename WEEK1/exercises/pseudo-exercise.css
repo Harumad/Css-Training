@@ -1,0 +1,16 @@
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+button:hover {
+    background-color: orange;
+    
+}
+
+input:focus{
+    border: 2px solid green;
+}

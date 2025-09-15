@@ -1,0 +1,41 @@
+p {
+    color: green;
+}
+
+ #main-title {
+    color: purple;
+}
+
+.note {
+    color: blue;
+    font-weight: bold;
+}
+
+h2, h3 { color: darkgreen;
+    text-align: center;
+
+}
+
+h1, p, button {
+    font-family: arial;
+}
+
+h1,p {
+    color: darkblue;
+}
+
+
+
+
+#submit {
+    background-color: orange;
+    color: white;   /* Make text visible */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer
+}
+
+
+a:hover {
+    color: red;
+}
