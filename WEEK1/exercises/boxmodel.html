@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Model Practice</title>
+<link rel="stylesheet" href="boxmodel.css">
+<style>
+  .box {
+    width: 200px;              /* content width */
+    padding: 50px;             /* inside space */
+    border: 10px dashed red;   /* border thickness */
+    margin: 50px 50px;              /* outside space */
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  .content::before {
+    content: "Content";
+    display: block;
+    font-weight: bold;
+  }
+
+
+  .content {
+    width: 150px;
+    padding: 50px;
+    border: 10px solid black;
+    margin: 50px 0 50px 50px;
+    background-color: lightgreen; /* content */
+    text-align: center;
+  }
+
+  .content::before {
+    content: "Content";
+    display: block;
+    font-weight: bold;
+  }
+
+</style>
+</head>
+<body>
+
+
+
+<div class="box">Hello World!</div>
+
+<div class="content">
+  Hello World!
+</div>
+
+<p style="color: gray;">Green = Content / inside text area<br>
+Border = black line<br>
+Margin = empty space outside</p>
+
+<h1>I also Learn CSS Typography</h1>
+  <h2>Sam took me on learning Fonts & Text Styles</h2>
+  <p class="intro">This is a paragraph to practice font styles and text alignment.</p>
+  <p class="highlight">Highlight this paragraph using color and text-transform.</p>
+
+
+</body>
+</html>
