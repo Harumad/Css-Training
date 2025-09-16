@@ -1,0 +1,47 @@
+/* Heading with dashed border */
+h2 {
+  border: 3px dashed blue;
+  padding: 10px;
+}
+
+/* Paragraph with solid border and rounded corners */
+p {
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Button with outline */
+button {
+  outline: 2px dotted red;
+  padding: 8px 15px;
+  background-color: lightgray;
+}
+
+/* Circle using border-radius */
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: skyblue;
+  border: 3px solid navy;
+  border-radius: 50%;   /* makes it a perfect circle */
+  margin: 20px auto;
+}
+
+/* Round image */
+.round-img {
+  border-radius: 50%;   /* turns square/rect image into a circle */
+  border: 4px solid purple;
+  display: block;
+  margin: 0 auto;
+}
+
+
+body{
+    background-color: lightblue;
+    background-image: url('dog1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+

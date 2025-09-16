@@ -1,0 +1,109 @@
+/* Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Shared styles for sections */
+section {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+/* Section 1 - Scroll Background */
+.scroll-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+/* Section 2 - Fixed Background */
+.fixed-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Section 3 - Overlay behind text */
+.overlay-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Section 4 - Full overlay */
+.full-overlay-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.full-overlay-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.full-overlay-bg .overlay-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section 5 - Gradient overlay */
+.gradient-overlay-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.gradient-overlay-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+.gradient-overlay-bg .overlay-content {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+/* Shared styles for sections */
+section {
+  height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* First section - scroll */
+.scroll-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+/* Second section - fixed */
+.fixed-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,0.5); /* fallback overlay */
+}
+
+
+/* Third section - with overlay */
+.overlay-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+/* Fourth section - full overlay */
+.full-overlay-bg {
+  background: url("/dog1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.full-overlay-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay covers entire section */
+}
+
+.full-overlay-bg .overlay-content {
+  position: relative; /* keeps text above overlay */
+  z-index: 1;
+}
+
+
+/* Fifth section - gradient overlay */
+.gradient-overlay-bg {
+  background: url("dog.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.gradient-overlay-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
