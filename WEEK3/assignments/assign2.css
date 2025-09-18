@@ -1,0 +1,59 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Common box styles */
+    .box {
+      background: lightblue;
+      border: 2px solid navy;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+      flex: 1; /* allows boxes to grow equally */
+    }
+
+    /* Each container has its own class */
+    .row-container {
+      display: flex;
+      flex-direction: row; /* left to right */
+      border: 3px dashed gray;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .row-reverse-container {
+      display: flex;
+      flex-direction: row-reverse; /* right to left */
+      border: 3px dashed gray;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .column-container {
+      display: flex;
+      flex-direction: column; /* top to bottom */
+      border: 3px dashed gray;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .space-between-container {
+      display: flex;
+      justify-content: space-between; /* spread across */
+      border: 3px dashed gray;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center;     /* center vertically */
+      height: 200px;
+      border: 3px dashed gray;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+ 

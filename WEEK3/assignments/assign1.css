@@ -1,0 +1,18 @@
+/* 1. Make <h1> red using HEX */
+h1 {
+  color: #ff0000;
+}
+
+/* 2. Make <p> green using RGB */
+p {
+  color: rgb(0, 128, 0);
+}
+
+/* 3. Make <div> 50% width of the screen using vw */
+.box {
+  background-color: lightblue;
+  width: 50vw;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}

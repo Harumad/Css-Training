@@ -1,0 +1,33 @@
+h2 {
+  color: red;
+}
+2 {
+  color: blue;
+}
+
+
+h3 {
+  color: #ff0000; /* red */
+}
+h3 {
+  color: #00ff00; /* green */
+}
+
+
+
+h4 {
+  color: rgb(0, 0, 255); /* blue */
+}
+h4 {
+  color: rgba(0, 255, 0, 0.5); /* semi-transparent green */
+}
+
+
+h4 {
+  font-size: 150rem;
+}
+
+h3{
+    width: 50vw;
+    height: 30vh;
+}

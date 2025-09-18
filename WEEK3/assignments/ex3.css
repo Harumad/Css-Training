@@ -1,0 +1,58 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .container {
+      position: relative; /* Important for absolute positioning */
+      width: 90%;
+      height: 300px;
+      border: 3px dashed gray;
+      margin-bottom: 50px;
+    }
+
+    .box {
+      width: 120px;
+      height: 60px;
+      background: lightblue;
+      border: 2px solid navy;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Positioning examples */
+    .static {
+      position: static;
+    }
+
+    .relative {
+      position: relative;
+      top: 30px;
+      left: 40px;
+      background: lightgreen;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: lightcoral;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: gold;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: violet;
+    }
+
+    .spacer {
+      height: 1000px; /* To test scrolling with fixed & sticky */
+    }
