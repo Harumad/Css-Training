@@ -1,0 +1,57 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      border: 3px solid gray;
+      padding: 10px;
+      margin-bottom: 40px;
+      height: 150px;
+    }
+
+    .box {
+      background: lightblue;
+      border: 2px solid navy;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+    }
+
+    /* Justify Content  */
+    .jc-center   { justify-content: center; }
+    .jc-end      { justify-content: flex-end; }
+    .jc-between  { justify-content: space-between; }
+    .jc-around   { justify-content: space-around; }
+    .jc-evenly   { justify-content: space-evenly; }
+
+    /* Align Items  */
+    .ai-center   { align-items: center; }
+    .ai-end      { align-items: flex-end; }
+    .ai-stretch  { align-items: stretch; }
+    .ai-baseline { align-items: baseline; }
+
+    /* Flex Grow */
+    .grow-demo .box1 { flex-grow: 1; }
+    .grow-demo .box2 { flex-grow: 2; }
+    .grow-demo .box3 { flex-grow: 1; }
+
+    /* Flex Shrink */
+    .shrink-demo {
+      width: 300px; /* smaller container to test shrinking */
+    }
+    .shrink-demo .box1 { flex-shrink: 1; }
+    .shrink-demo .box2 { flex-shrink: 0; background: lightcoral; }
+
+    /* Flex Basis */
+    .basis-demo .box1 { flex-basis: 200px; }
+    .basis-demo .box2 { flex-basis: 100px; }
+    .basis-demo .box3 { flex-basis: 150px; }
+
+    /* Align Self */
+    .self-demo .box1 { align-self: flex-start; }
+    .self-demo .box2 { align-self: center; }
+    .self-demo .box3 { align-self: flex-end; }
+ 

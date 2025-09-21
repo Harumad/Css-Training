@@ -1,0 +1,48 @@
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f4f4f4;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: firebrick;
+  font-weight: bold;
+}
+
+/* Main Projects Section */
+.main-container {
+  display: flex;
+  gap: 15px;  
+  padding: 20px;
+}
+
+.box {
+  flex: 1;
+  border: 2px solid green;
+  padding: 30px;
+  text-align: center;
+  background: #eafbea;
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #f4f4f4;
+  color: blue;
+  font-weight: bold;
+}

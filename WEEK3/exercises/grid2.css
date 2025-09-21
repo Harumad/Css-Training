@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar hero"
+    "projects projects"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 200px 1fr 60px;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+/* Outer layout */
+.header   { grid-area: header; background: steelblue; color: white; display: flex; align-items: center; justify-content: center; }
+.sidebar  { grid-area: sidebar; background: lightgray; display: flex; align-items: center; justify-content: center; }
+.hero     { grid-area: hero; background: peachpuff; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.projects { grid-area: projects; background: white; padding: 20px; }
+.footer   { grid-area: footer; background: steelblue; color: white; display: flex; align-items: center; justify-content: center; }
+
+/* Nested grid for projects */
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: lightseagreen;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}

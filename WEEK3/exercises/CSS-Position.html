@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Demo</title>
+  <style>
+    body {
+      height: 200vh; /* long page for scrolling */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      margin: 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .static  { background: gray; position: static; }
+    .relative{ background: blue; position: relative; top: 20px; left: 20px; }
+    .absolute{ background: green; position: absolute; top: 50px; right: 20px; }
+    .fixed   { background: red; position: fixed; bottom: 20px; right: 20px; }
+    .sticky  { background: purple; position: sticky; top: 0; }
+  </style>
+</head>
+<body>
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+  <div class="box sticky">Sticky</div>
+</body>
+</html>
